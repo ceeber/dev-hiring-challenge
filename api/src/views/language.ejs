@@ -1,0 +1,18 @@
+<table class="table table-striped"><thead>
+  <tr>
+    <th>CODIGO</th>
+    <th>NOME</th>
+    <th>LINGUAGEM</th>   
+  </tr>
+</thead>
+<tbody>
+  <tr>
+
+<% {data.forEach(function(descricao) { %>
+                
+  <td><%= descricao.cod_item %></td>
+  <td><a class="btn btn-outline-success" href="<%= descricao.url %>" target="_blank"><%= descricao.full_name %></a></td>
+  <td><%= descricao.language %></td>
+  
+</tr>
+<% })}; %>
